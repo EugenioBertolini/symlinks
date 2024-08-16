@@ -103,11 +103,22 @@ alias va='nvim ~/.config/alacritty/alacritty.toml'
 alias vi3='nvim ~/.config/i3/config'
 alias vpb='nvim ~/.config/polybar'
 
+alias neomatrix='neo-matrix --charset=english -m "L A S C I A T E   O G N I   S P E R A N Z A   V O I   C H E   E N T R A T E"'
+alias neo='neomatrix -a -b 0 -D -d 0.75 -F -G 20 -l 1,1000 -S 5'
+alias neor='neo -c red'
+alias neog='neo -c green2'
+alias neos='neo -c gray'
+
+alias T='tock -c -m -s -C 1'
+
 alias v='nvim'
 alias vv='nvim .'
 alias lg='lazygit'
 alias py='python'
 alias todo='todo.sh'
+alias tl='todo list'
+alias ta='todo add'
+alias td='todo done'
 alias pipes='pipes.sh'
 
 # Git aliases
