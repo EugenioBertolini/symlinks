@@ -2,9 +2,11 @@ exec --no-startup-id picom
 exec --no-startup-id xrandr --output DP-0 --auto --right-of HDMI-0
 exec --no-startup-id /usr/lib/gsd-xsettings
 exec --no-startup-id feh --bg-scale ~/docs/pictures/rose-pine-wallpapers/rose_pine_contourline.png
+exec --no-startup-id ibus-daemon --xim -d -r
+
 exec_always --no-startup-id "redshift -t 6500:4500 -g 0.8 -m randr"
-exec_always --no-startup-id "polybar"
-exec_always --no-startup-id "setxkbmap -model pc104 -layout jp -option grp:alt_shift_toggle"
+exec_always --no-startup-id "bash ~/.config/polybar/launch.sh --rosepine"
+exec_always --no-startup-id "setxkbmap -model pc104 -layout jp:jpn -option grp:alt_shift_toggle"
 
 # font pango:JetBrainsMonoNL Nerd Font Mono Bold 11
 font pango:JetBrainsMono Nerd Font Bold 14
@@ -36,7 +38,6 @@ bindsym XF86AudioPrev exec playerctl prev
 bindsym XF86MonBrightnessUp exec brightnessctl set +5%
 bindsym XF86MonBrightnessDown exec brightnessctl set -5%
 
-
 ### KEYMAPS ###############################################################
 set $mod Mod4
 
@@ -54,6 +55,7 @@ bindsym $mod+a exec dolphin
 bindsym $mod+f exec chromium
 bindsym $mod+s exec "flameshot full -c -p ~/docs/pictures/Screenshots"
 bindsym $mod+Shift+s exec "flameshot gui -c -p ~/docs/pictures/Screenshots"
+bindsym $mod+Shift+t exec "alacritty -e tmux"
 
 # Control redshift
 bindsym $mod+i exec redshift -P -O 4500 -g 0.8
@@ -101,10 +103,10 @@ bindsym $mod+e exec i3-msg exit
 bindsym $mod+z exec i3lock-fancy -p
 
 # switch to workspace
-bindsym $mod+1 workspace number "1: daily"
-bindsym $mod+2 workspace number "2: www"
-bindsym $mod+3 workspace number "3: admin"
-bindsym $mod+4 workspace number "4"
+bindsym $mod+1 workspace number "1: Main"
+bindsym $mod+2 workspace number "2: Internet"
+bindsym $mod+3 workspace number "3: Tmux"
+bindsym $mod+4 workspace number "4: Admin"
 bindsym $mod+5 workspace number "5"
 bindsym $mod+6 workspace number "6"
 bindsym $mod+7 workspace number "7"
@@ -113,10 +115,10 @@ bindsym $mod+9 workspace number "9"
 bindsym $mod+0 workspace number "10"
 
 # move focused container to workspace
-bindsym $mod+Shift+1 move container to workspace number "1: daily"
-bindsym $mod+Shift+2 move container to workspace number "2: www"
-bindsym $mod+Shift+3 move container to workspace number "3: admin"
-bindsym $mod+Shift+4 move container to workspace number "4"
+bindsym $mod+Shift+1 move container to workspace number "1: Main"
+bindsym $mod+Shift+2 move container to workspace number "2: Internet"
+bindsym $mod+Shift+3 move container to workspace number "3: Tmux"
+bindsym $mod+Shift+4 move container to workspace number "4: Admin"
 bindsym $mod+Shift+5 move container to workspace number "5"
 bindsym $mod+Shift+6 move container to workspace number "6"
 bindsym $mod+Shift+7 move container to workspace number "7"
@@ -124,9 +126,12 @@ bindsym $mod+Shift+8 move container to workspace number "8"
 bindsym $mod+Shift+9 move container to workspace number "9"
 bindsym $mod+Shift+0 move container to workspace number "10"
 
-exec --no-startup-id i3-msg "workspace 2: www; exec --no-startup-id chromium"
-assign [class="Chromium"] number "2: www"
-exec --no-startup-id kitty
+# exec --no-startup-id i3-msg "workspace 3: Tmux; exec --no-startup-id alacritty -e tmux"
+assign [class="Alacritty"] number "3: Tmux"
+exec --no-startup-id i3-msg "workspace 2: Internet; exec --no-startup-id chromium"
+assign [class="Chromium"] number "2: Internet"
+exec --no-startup-id i3-msg "workspace 1: Main; exec --no-startup-id kitty"
+assign [class="kitty"] number "1: Main"
 
 # gaps
 gaps inner 8

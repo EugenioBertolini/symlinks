@@ -13,3 +13,8 @@ x 2024-08-11 fix hbar i3
 x 2024-08-11 fix redshift i3
 x 2024-08-12 resolve bluetooth
 x 2024-08-16 checkout foot and ghosty
+x 2024-08-16 sync dotfiles
+x 2024-08-16 set variables fzf
+x 2024-08-16 make drives without sudo priviledge
+x 2024-08-16 borders i3
+x 2024-08-16 screen rec
