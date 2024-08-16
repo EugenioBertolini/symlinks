@@ -1,0 +1,7 @@
+[Default Applications]
+text/plain=org.gnome.TextEditor.desktop
+video/mp4=vlc.desktop
+
+[Added Associations]
+text/plain=org.gnome.TextEditor.desktop;
+video/mp4=vlc.desktop;

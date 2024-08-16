@@ -1,0 +1,8 @@
+sync dotfiles
+set variables fzf
+mount nas
+make drives without sudo priviledge
+big IP
+screen rec
+borders i3
+wayland (river-wm or hyprland)

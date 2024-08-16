@@ -1,0 +1,29 @@
+MenuBar=Disabled
+
+[CompactMode]
+UseSystemFont=false
+ViewFont=FiraCode Nerd Font,11,-1,5,500,0,0,0,0,0,0,0,0,0,0,1
+
+[DetailsMode]
+UseSystemFont=false
+ViewFont=FiraCode Nerd Font,11,-1,5,500,0,0,0,0,0,0,0,0,0,0,1
+
+[General]
+RememberOpenedTabs=false
+Version=202
+ViewPropsTimestamp=2024,8,14,17,41,22.128
+
+[IconsMode]
+UseSystemFont=false
+ViewFont=FiraCode Nerd Font,11,-1,5,500,0,0,0,0,0,0,0,0,0,0,1
+
+[KFileDialog Settings]
+Places Icons Auto-resize=false
+Places Icons Static Size=22
+
+[MainWindow]
+MenuBar=Disabled
+ToolBarsMovable=Disabled
+
+[PreviewSettings]
+Plugins=appimagethumbnail,audiothumbnail,comicbookthumbnail,cursorthumbnail,directorythumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,imagethumbnail,jpegthumbnail,kraorathumbnail,opendocumentthumbnail,svgthumbnail,windowsexethumbnail,windowsimagethumbnail

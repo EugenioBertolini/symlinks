@@ -1,0 +1,15 @@
+x 2024-08-08 set ssh for github
+x 2024-08-08 check why zsh-completion lags
+x 2024-08-08 auto activate on chdir poetry/conda
+x 2024-08-08 completions for poetry
+x 2024-08-09 set variables zsh history
+x 2024-08-09 IME keyboard for Japanese
+x 2024-08-09 install i3wm
+x 2024-08-09 set themes btop
+x 2024-08-11 mount disk and nas
+x 2024-08-11 fix japanese ime and space bug i3
+x 2024-08-11 fix keymaps
+x 2024-08-11 fix hbar i3
+x 2024-08-11 fix redshift i3
+x 2024-08-12 resolve bluetooth
+x 2024-08-16 checkout foot and ghosty

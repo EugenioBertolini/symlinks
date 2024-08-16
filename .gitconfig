@@ -1,0 +1,26 @@
+[user]
+  name = Eugenio Bertolini
+  email = eugenio@g.ecc.u-tokyo.ac.jp
+[init]
+  defaultBranch = main
+[commit]
+  verbose = true
+[push]
+  autoSetupRemote = true
+[diff]
+  colorMoved = default
+[merge]
+  conflictstyle = zdiff3
+[help]
+  autocorrect = prompt
+[core]
+  editor = nvim
+  pager = delta
+[delta]
+  navigate = true
+  side-by-side = true
+[interactive]
+  diffFilter = delta --color-only
+[alias]
+  quickpush = !git add . && git commit -m 'quick push' && git push
+  lg = "log --decorate-refs-exclude=refs/jj --pretty=tformat:'%C(blue)%h %C(yellow)%an %C(cyan)%cr %C(#F5C2E7)%D\n%C(auto)%s'"

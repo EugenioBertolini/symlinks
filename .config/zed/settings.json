@@ -1,0 +1,25 @@
+{
+  "base_keymap": "VSCode",
+  "vim_mode": true,
+  "autosave": "on_focus_change",
+  "preferred_line_length": 80,
+  "ui_font_size": 16,
+  "buffer_font_size": 16,
+  "buffer_font_family": "JetBrainsMonoNL Nerd Font",
+  "cursor_blink": false,
+  "theme": {
+    "mode": "dark",
+    "light": "Rosé Pine Dawn",
+    "dark": "Rosé Pine Moon"
+  },
+  "project_panel": {
+    "dock": "right"
+  },
+  "languages": {
+    "Python": {
+      "indent_guides": {
+        "enabled": true
+      }
+    }
+  }
+}
