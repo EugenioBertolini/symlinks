@@ -4,6 +4,21 @@ abseil-cpp
 accountsservice
 acl
 adobe-source-code-pro-fonts
+adobe-source-han-fonts
+adobe-source-han-sans-cn-fonts
+adobe-source-han-sans-hk-fonts
+adobe-source-han-sans-jp-fonts
+adobe-source-han-sans-kr-fonts
+adobe-source-han-sans-otc-fonts
+adobe-source-han-sans-tw-fonts
+adobe-source-han-serif-cn-fonts
+adobe-source-han-serif-jp-fonts
+adobe-source-han-serif-kr-fonts
+adobe-source-han-serif-otc-fonts
+adobe-source-han-serif-tw-fonts
+adobe-source-pro-fonts
+adobe-source-sans-fonts
+adobe-source-serif-fonts
 adwaita-cursors
 adwaita-icon-theme
 adwaita-icon-theme-legacy
@@ -26,6 +41,9 @@ arc-gtk-theme
 archlinux-keyring
 argon2
 aribb24
+aspell
+aspell-en
+aspell-it
 at-spi2-core
 atkmm
 attica
@@ -35,6 +53,7 @@ audit
 autoconf
 automake
 avahi
+ayatana-ido
 babl
 baloo
 baloo-widgets
@@ -70,6 +89,8 @@ cairomm
 cairomm-1.16
 calc
 cantarell-fonts
+cava
+cava-debug
 cblas
 cdparanoia
 cfitsio
@@ -111,6 +132,7 @@ diffutils
 djvulibre
 dkms
 dmenu
+dnscrypt-proxy
 dolphin
 dotconf
 double-conversion
@@ -252,6 +274,7 @@ grilo
 grilo-plugins
 grim
 groff
+grsync
 gsettings-desktop-schemas
 gsettings-system-schemas
 gsfonts
@@ -262,6 +285,7 @@ gspell
 gssdp
 gst-devtools-libs
 gst-editing-services
+gst-libav
 gst-plugin-gtk
 gst-plugin-pipewire
 gst-plugins-bad
@@ -282,6 +306,7 @@ gtkmm-4.0
 gtkmm3
 gtksourceview4
 gtksourceview5
+gufw
 guile
 gupnp
 gupnp-av
@@ -307,6 +332,8 @@ highway
 htop
 http-parser
 hunspell
+hunspell-en_us
+hunspell-it
 hwdata
 hwloc
 hyphen
@@ -330,6 +357,7 @@ ijs
 imagemagick
 imath
 imlib2
+iniparser
 inkscape
 iproute2
 iptables
@@ -400,6 +428,7 @@ lazygit
 lcms2
 ldb
 lensfun
+less
 lib2geom
 libabw
 libadwaita
@@ -414,6 +443,8 @@ libatomic_ops
 libavc1394
 libavif
 libavtp
+libayatana-appindicator
+libayatana-indicator
 libb2
 libblockdev
 libblockdev-crypto
@@ -444,6 +475,7 @@ libcolord
 libconfig
 libcue
 libcups
+libcurl-gnutls
 libdaemon
 libdatachannel
 libdatrie
@@ -589,6 +621,7 @@ libpciaccess
 libpeas
 libpgm
 libphonenumber
+libpipeline
 libpipewire
 libplacebo
 libplist
@@ -742,6 +775,8 @@ m4
 mailcap
 make
 malcontent
+man-db
+man-pages
 mbedtls
 mbedtls2
 md4c
@@ -765,6 +800,8 @@ mypaint-brushes1
 nano
 nautilus
 ncurses
+neo-matrix
+neo-matrix-debug
 neofetch
 neon
 neovim
@@ -819,6 +856,7 @@ otf-monaspace-nerd
 otf-opendyslexic-nerd
 otf-overpass-nerd
 p11-kit
+p7zip
 pacman
 pacman-mirrorlist
 pahole
@@ -979,9 +1017,12 @@ qca-qt6
 qrencode
 qt5-base
 qt5-declarative
+qt5-location
 qt5-svg
 qt5-translations
 qt5-wayland
+qt5-webchannel
+qt5-webengine
 qt5-x11extras
 qt6-5compat
 qt6-base
@@ -994,10 +1035,12 @@ qt6-svg
 qt6-translations
 qt6-wayland
 ragel
+rainfall
 range-v3
 raptor
 rasqal
 rav1e
+rclone
 re2
 readline
 redland
@@ -1006,6 +1049,7 @@ rhash
 ripgrep
 rnnoise
 rofi
+rsync
 rtkit
 rtmpdump
 rubberband
@@ -1021,12 +1065,15 @@ sdl2_ttf
 seatd
 sed
 semver
+sequoia-sqv
 serd
 shaderc
 shadow
 shared-mime-info
+signal-desktop
 siji-git
 simple-scan
+slack-desktop
 slang
 slurp
 smartmontools
@@ -1046,6 +1093,7 @@ speech-dispatcher
 speex
 speexdsp
 spirv-tools
+spotify-launcher
 sqlite
 sratom
 srt
@@ -1092,15 +1140,18 @@ tslib
 ttf-0xproto-nerd
 ttf-3270-nerd
 ttf-agave-nerd
+ttf-anonymous-pro
 ttf-anonymouspro-nerd
 ttf-arimo-nerd
 ttf-bigblueterminal-nerd
+ttf-bitstream-vera
 ttf-bitstream-vera-mono-nerd
 ttf-cascadia-code-nerd
 ttf-cascadia-mono-nerd
 ttf-cousine-nerd
 ttf-d2coding-nerd
 ttf-daddytime-mono-nerd
+ttf-dejavu
 ttf-dejavu-nerd
 ttf-droid
 ttf-envycoder-nerd
@@ -1147,6 +1198,7 @@ ttf-sourcecodepro-nerd
 ttf-space-mono-nerd
 ttf-terminus-nerd
 ttf-tinos-nerd
+ttf-ubuntu-font-family
 ttf-ubuntu-mono-nerd
 ttf-ubuntu-nerd
 ttf-victor-mono-nerd
@@ -1159,6 +1211,7 @@ uchardet
 udisks2
 ueberzugpp
 ueberzugpp-debug
+ufw
 unibilium
 unzip
 upower
@@ -1187,11 +1240,15 @@ wavpack
 waybar
 wayland
 wayland-protocols
+webkit2gtk
 webkit2gtk-4.1
 webkitgtk-6.0
 webrtc-audio-processing-1
 wezterm
 wget
+whatsapp-for-linux-debug
+whatsie
+whatsie-debug
 which
 wildmidi
 wireless_tools
@@ -1260,6 +1317,7 @@ zathura-pdf-poppler
 zbar
 zed-git
 zed-git-debug
+zenity
 zeromq
 zimg
 zip
