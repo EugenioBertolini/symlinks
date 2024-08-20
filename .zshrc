@@ -58,7 +58,7 @@ export PATH
 # precmd () {echo -ne "\e]1;$(basename "$PWD")\a"}
 
 # Set Display
-export DISPLAY=:0
+# export DISPLAY=:0
 
 # Load completions
 autoload -Uz compinit
@@ -96,7 +96,7 @@ alias xx='xmodmap ~/.Xmodmap'
 mnas() {
   sudo mount -t cifs -o user=cloudy,password=$1,iocharset=utf8,noperm //172.17.147.1/NAS100TB ~/nas
 }
-alias sshml='ssh fuge@172.17.147.237'
+alias sshml='ssh -X fuge@172.17.147.237'
 
 alias vz='nvim ~/.zshrc'
 alias vp='nvim ~/.p10k.zsh'
