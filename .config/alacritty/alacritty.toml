@@ -15,7 +15,7 @@ italic.family = "JetBrainsMonoNL"
 italic.style = "SemiBold Italic"
 bold_italic.family = "JetBrainsMonoNL"
 bold_italic.style = "ExtraBold Italic"
-size = 11
+size = 11.1
 
 [scrolling]
 history = 100000
