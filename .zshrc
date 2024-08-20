@@ -74,11 +74,9 @@ alias ...='z ../..'
 alias ....='z ../../..'
 alias .....='z ../../../..'
 alias ......='z ../../../../..'
-alias l='eza -lahF --git --group-directories-first --icons --no-permissions --no-user'
-alias la='eza -lahF --git --group-directories-first --icons'
-
-alias mountd='sudo mount /dev/nvme1n1 /mnt/d' # sudo mkdir /mnt/d
-alias mountusb='sudo mount -t ntfs3 /dev/sda1 /mnt/f' # sudo mkdir /mnt/f
+alias l='eza -lahF --git --icons --group-directories-first --no-permissions --no-user'
+alias la='eza -lahF --git --icons --group-directories-first'
+alias ls='eza -F --git --icons --group-directories-first'
 
 alias capture='flameshot gui -c -p ~/Pictures/Screenshots > /dev/null 2>&1'
 alias screen='flameshot full -c -p ~/Pictures/Screenshots > /dev/null 2>&1'
@@ -86,11 +84,15 @@ alias screen='flameshot full -c -p ~/Pictures/Screenshots > /dev/null 2>&1'
 alias c='clear'
 alias e='exit'
 alias zr='source ~/.zshrc'
-alias xx='xmodmap ~/.Xmodmap'
 alias yayi='yay -S --needed --answerclean All --answerdiff None'
 alias yayr='yay -Rns'
 alias yayq='yay -Qq > ~/packages.txt'
 alias yaye='yay -Qqe > ~/installed-packages.txt'
+
+alias xx='xmodmap ~/.Xmodmap'
+mnas() {
+  sudo mount -t cifs -o user=cloudy,password=$1,iocharset=utf8,noperm //172.17.147.1/NAS100TB ~/nas
+}
 
 alias vz='nvim ~/.zshrc'
 alias vp='nvim ~/.p10k.zsh'

@@ -22,6 +22,7 @@ adobe-source-serif-fonts
 adwaita-cursors
 adwaita-icon-theme
 adwaita-icon-theme-legacy
+aic94xx-firmware
 alacritty
 albafetch
 albafetch-debug
@@ -44,6 +45,7 @@ aribb24
 aspell
 aspell-en
 aspell-it
+ast-firmware
 at-spi2-core
 atkmm
 attica
@@ -89,6 +91,7 @@ cairomm
 cairomm-1.16
 calc
 cantarell-fonts
+capt-src
 cava
 cava-debug
 cblas
@@ -103,6 +106,7 @@ cli11
 clucene
 cmake
 cmatrix
+code
 colord
 colord-gtk-common
 colord-gtk4
@@ -115,6 +119,9 @@ coreutils
 cppdap
 cracklib
 cryptsetup
+cups
+cups-filters
+cups-pdf
 cups-pk-helper
 curl
 dav1d
@@ -145,6 +152,7 @@ efibootmgr
 efivar
 egl-wayland
 eglexternalplatform
+electron30
 ell
 enchant
 epiphany
@@ -430,6 +438,34 @@ ldb
 lensfun
 less
 lib2geom
+lib32-brotli
+lib32-e2fsprogs
+lib32-gcc-libs
+lib32-glibc
+lib32-gmp
+lib32-gnutls
+lib32-icu
+lib32-keyutils
+lib32-krb5
+lib32-libcups
+lib32-libffi
+lib32-libidn2
+lib32-libjpeg-turbo
+lib32-libldap
+lib32-libpng
+lib32-libpng12
+lib32-libtasn1
+lib32-libtiff
+lib32-libunistring
+lib32-libxcrypt
+lib32-libxml2
+lib32-nettle
+lib32-openssl
+lib32-p11-kit
+lib32-popt
+lib32-xz
+lib32-zlib
+lib32-zstd
 libabw
 libadwaita
 libao
@@ -475,6 +511,7 @@ libcolord
 libconfig
 libcue
 libcups
+libcupsfilters
 libcurl-gnutls
 libdaemon
 libdatachannel
@@ -519,6 +556,8 @@ libgee
 libgexiv2
 libgirepository
 libgit2
+libglade
+libglade-debug
 libglvnd
 libgme
 libgoa
@@ -629,6 +668,7 @@ libpng
 libportal
 libportal-gtk3
 libportal-gtk4
+libppd
 libproxy
 libpsl
 libpulse
@@ -752,6 +792,11 @@ lilv
 linux
 linux-api-headers
 linux-firmware
+linux-firmware-bnx2x
+linux-firmware-liquidio
+linux-firmware-mellanox
+linux-firmware-nfp
+linux-firmware-qlogic
 linux-firmware-whence
 linux-headers
 lld
@@ -787,6 +832,7 @@ minizip
 mjpegtools
 mkinitcpio
 mkinitcpio-busybox
+mkinitcpio-firmware
 mobile-broadband-provider-info
 mod_dnssd
 mpdecimal
@@ -825,6 +871,7 @@ npm
 npth
 nspr
 nss
+nss-mdns
 nvidia-open-dkms
 nvidia-utils
 obs-studio
@@ -1014,6 +1061,7 @@ python39
 python39-debug
 pywal-git
 qca-qt6
+qpdf
 qrencode
 qt5-base
 qt5-declarative
@@ -1055,6 +1103,7 @@ rtmpdump
 rubberband
 rust
 rygel
+samba
 sane
 sbc
 scour
@@ -1214,6 +1263,7 @@ ueberzugpp-debug
 ufw
 unibilium
 unzip
+upd72020x-fw
 upower
 usbmuxd
 uthash
@@ -1240,13 +1290,13 @@ wavpack
 waybar
 wayland
 wayland-protocols
+wd719x-firmware
 webkit2gtk
 webkit2gtk-4.1
 webkitgtk-6.0
 webrtc-audio-processing-1
 wezterm
 wget
-whatsapp-for-linux-debug
 whatsie
 whatsie-debug
 which
@@ -1300,6 +1350,7 @@ xorg-xset
 xorg-xwayland
 xorgproto
 xsel
+xss-lock
 xterm
 xvidcore
 xxhash

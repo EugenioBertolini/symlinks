@@ -18,3 +18,4 @@ x 2024-08-16 set variables fzf
 x 2024-08-16 make drives without sudo priviledge
 x 2024-08-16 borders i3
 x 2024-08-16 screen rec
+x 2024-08-19 Utils: Printer

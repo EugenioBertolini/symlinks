@@ -4,3 +4,5 @@ Lab: review neural network
 LAN: mount NAS
 LAN: SSH connection
 Chore: setup Hyperland
+Utils: Drivers LAN adapter
+Lab: XAI on LSTM

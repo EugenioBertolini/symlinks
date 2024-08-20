@@ -16,11 +16,15 @@ brightnessctl
 btop
 btrfs-progs
 calc
+capt-src
 cava
 chafa
 chromium
 cmake
 cmatrix
+code
+cups
+cups-pdf
 dkms
 dmenu
 dnscrypt-proxy
@@ -119,6 +123,7 @@ ly
 malcontent
 man-db
 man-pages
+mkinitcpio-firmware
 nano
 nautilus
 neo-matrix
@@ -132,6 +137,7 @@ nodejs
 noto-fonts-cjk
 noto-fonts-extra
 npm
+nss-mdns
 nvidia-open-dkms
 obs-studio
 orca
@@ -177,6 +183,7 @@ ripgrep
 rofi
 rsync
 rygel
+samba
 scrot
 signal-desktop
 siji-git
@@ -276,6 +283,7 @@ xdg-user-dirs-gtk
 xdg-utils
 xorg-xinit
 xsel
+xss-lock
 xterm
 yay
 yay-debug

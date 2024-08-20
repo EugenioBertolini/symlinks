@@ -47,6 +47,14 @@ tiling_drag modifier titlebar
 
 # f5 fn+f6-f11 qwert asdfg hjkl zxcv Return arrows
 
+# reload/restart the configuration file
+bindsym $mod+F5 reload
+
+# exit i3 (logs you out of your X session)
+bindsym $mod+e exec i3-msg exit
+bindsym $mod+Shift+e exec rofi -show p -modi p:'~/.config/i3/rofi-power-menu --choices=shutdown/reboot/suspend'
+bindsym $mod+p exec ~/.config/i3/i3lock-fancy-multimonitor/lock -p
+
 # Terminal, kill, dmenu
 bindsym $mod+Return exec kitty
 bindsym $mod+x kill
@@ -72,6 +80,10 @@ bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
 # move focused window
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
 bindsym $mod+Shift+Left move left
 bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
@@ -94,13 +106,6 @@ bindsym $mod+w layout tabbed
 bindsym $mod+t layout toggle split
 bindsym $mod+v floating toggle
 bindsym $mod+c focus mode_toggle
-
-# reload/restart the configuration file
-bindsym $mod+F5 reload
-
-# exit i3 (logs you out of your X session)
-bindsym $mod+e exec i3-msg exit
-bindsym $mod+z exec i3lock-fancy -p
 
 # switch to workspace
 bindsym $mod+1 workspace number "1: Main"
