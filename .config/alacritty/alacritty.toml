@@ -8,9 +8,13 @@ transparent_background_colors = true
 
 [font]
 normal.family = "JetBrainsMonoNL"
+normal.style = "SemiBold"
 bold.family = "JetBrainsMonoNL"
+bold.style = "ExtraBold"
 italic.family = "JetBrainsMonoNL"
+italic.style = "SemiBold Italic"
 bold_italic.family = "JetBrainsMonoNL"
+bold_italic.style = "ExtraBold Italic"
 size = 11
 
 [scrolling]
