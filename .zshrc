@@ -57,6 +57,9 @@ export PATH
 # DISABLE_AUTO_TITLE="true"
 # precmd () {echo -ne "\e]1;$(basename "$PWD")\a"}
 
+# Set Display
+export DISPLAY=:0
+
 # Load completions
 autoload -Uz compinit
 compinit
