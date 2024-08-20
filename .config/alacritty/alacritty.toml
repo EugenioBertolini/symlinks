@@ -15,10 +15,13 @@ italic.family = "JetBrainsMonoNL"
 italic.style = "SemiBold Italic"
 bold_italic.family = "JetBrainsMonoNL"
 bold_italic.style = "ExtraBold Italic"
-size = 11.1
+size = 11.25
 
 [scrolling]
 history = 100000
+
+[terminal]
+osc52 = "CopyPaste"
 
 [selection]
 save_to_clipboard = true
