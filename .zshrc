@@ -97,7 +97,7 @@ mnas() {
   sudo mount -t cifs -o user=cloudy,password=$1,iocharset=utf8,noperm //172.17.147.1/NAS100TB ~/nas
 }
 alias sshml='ssh -XY fuge@172.17.147.237'
-alias clip="nc -U ~/.clipper.sock"
+alias clip='nc -U ~/.clipper.sock'
 
 alias vz='nvim ~/.zshrc'
 alias vp='nvim ~/.p10k.zsh'
