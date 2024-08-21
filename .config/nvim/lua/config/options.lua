@@ -4,3 +4,4 @@
 vim.opt.scrolloff = 8
 vim.opt.listchars = { tab = "» ", multispace = " ", trail = "", extends = "⟩", precedes = "⟨" }
 vim.opt.colorcolumn = "89,90"
+vim.opt.clipboard = "unnamed"
