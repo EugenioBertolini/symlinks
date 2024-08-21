@@ -22,17 +22,6 @@ vim.keymap.set("n", "<leader>uS", function()
   vim.opt.scrolloff = 999 - vim.o.scrolloff
 end, { desc = "Toggle Scrolloff" })
 
--- Use Clipper
-wk.add({
-  mode = { "n", "v" },
-  {
-    "<leader>y",
-    "<cmd>call system('nc -U ~/.clipper.sock', @0)<CR>",
-    desc = "Yank with Clipper",
-    icon = { icon = "", color = "green" },
-  },
-})
-
 -- Oil keymaps and icon
 wk.add({
   {
