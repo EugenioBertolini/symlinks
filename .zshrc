@@ -49,6 +49,9 @@ fi
 if ! [[ "$PATH" =~ ":$TMUX_PLUGINS/tmux-session-wizard/bin" ]]; then
   PATH="$PATH:$TMUX_PLUGINS/tmux-session-wizard/bin"
 fi
+if ! [[ "$PATH" =~ ":$HOME/remote-clipboard-sync/target/release" ]]; then
+  PATH="$PATH:$HOME/remote-clipboard-sync/target/release"
+fi
 
 # Export PATH
 export PATH
