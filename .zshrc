@@ -49,9 +49,9 @@ fi
 if ! [[ "$PATH" =~ ":$TMUX_PLUGINS/tmux-session-wizard/bin" ]]; then
   PATH="$PATH:$TMUX_PLUGINS/tmux-session-wizard/bin"
 fi
-if ! [[ "$PATH" =~ ":$HOME/remote-clipboard-sync/target/release" ]]; then
-  PATH="$PATH:$HOME/remote-clipboard-sync/target/release"
-fi
+# if ! [[ "$PATH" =~ ":$HOME/remote-clipboard-sync/target/release" ]]; then
+#   PATH="$PATH:$HOME/remote-clipboard-sync/target/release"
+# fi
 
 # Export PATH
 export PATH
@@ -99,8 +99,7 @@ alias xx='xmodmap ~/.Xmodmap'
 mnas() {
   sudo mount -t cifs -o user=cloudy,password=$1,iocharset=utf8,noperm //172.17.147.1/NAS100TB ~/nas
 }
-alias sshml='ssh -XY fuge@172.17.147.237'
-alias clip='nc -U ~/.clipper.sock'
+alias sshml='ssh -X fuge@172.17.147.237'
 
 alias vz='nvim ~/.zshrc'
 alias vp='nvim ~/.p10k.zsh'
