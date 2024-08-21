@@ -91,10 +91,10 @@ bindsym $mod+Shift+Right move right
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
-        bindsym Left resize shrink width 4 px or 4 ppt
-        bindsym Down resize grow height 2 px or 2 ppt
-        bindsym Up resize shrink height 2 px or 2 ppt
-        bindsym Right resize grow width 4 px or 4 ppt
+        bindsym Left resize shrink width 4 px or 2 ppt
+        bindsym Down resize grow height 2 px or 1 ppt
+        bindsym Up resize shrink height 2 px or 1 ppt
+        bindsym Right resize grow width 4 px or 2 ppt
         bindsym Escape mode "default"
         bindsym Return mode "default"
 }
@@ -144,9 +144,19 @@ assign [class="WhatSie"] number "4: Media"
 assign [class="vlc"] number "5: VLC"
 
 # gaps
-gaps inner 8
+gaps inner 3
 gaps outer 0
-gaps bottom -1
+gaps top 2
+gaps right 0
+gaps left 0
+gaps bottom 0
+
+workspace "2: Internet" gaps inner 0
+workspace "2: Internet" gaps outer 0
+workspace "2: Internet" gaps top 0
+workspace "2: Internet" gaps right 0
+workspace "2: Internet" gaps left 0
+workspace "2: Internet" gaps bottom 0
 
 set $mode_gaps Gaps: (o)uter, (i)nner
 set $mode_gaps_outer Outer Gaps: +|-|0 (local), Shift + +|-|0 (global)

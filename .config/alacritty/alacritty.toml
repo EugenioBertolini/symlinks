@@ -7,15 +7,18 @@ opacity = 0.95
 transparent_background_colors = true
 
 [font]
-normal.family = "JetBrainsMonoNL"
-normal.style = "SemiBold"
-bold.family = "JetBrainsMonoNL"
-bold.style = "ExtraBold"
-italic.family = "JetBrainsMonoNL"
-italic.style = "SemiBold Italic"
-bold_italic.family = "JetBrainsMonoNL"
-bold_italic.style = "ExtraBold Italic"
+normal.family = "JetBrains Mono Nerd Font"
+normal.style = "Medium"
+bold.family = "JetBrains Mono Nerd Font"
+bold.style = "Bold"
+italic.family = "JetBrains Mono Nerd Font"
+italic.style = "MediumItalic"
+bold_italic.family = "JetBrains Mono Nerd Font"
+bold_italic.style = "BoldItalic"
 size = 11.25
+
+[keyboard]
+bindings = [{ key = ";", mods = "Control", action = "IncreaseFontSize" }]
 
 [scrolling]
 history = 100000
