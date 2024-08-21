@@ -23,7 +23,15 @@ vim.keymap.set("n", "<leader>uS", function()
 end, { desc = "Toggle Scrolloff" })
 
 -- Use Clipper
-vim.keymap.set("n", "<leader>y", "<cmd>call system('nc -U ~/.clipper.sock', @0)<CR>", { desc = "Yank with Clipper" })
+wk.add({
+  mode = { "n", "v" },
+  {
+    "<leader>y",
+    "<cmd>call system('nc -U ~/.clipper.sock', @0)<CR>",
+    desc = "Yank with Clipper",
+    icon = { icon = "", color = "green" },
+  },
+})
 
 -- Oil keymaps and icon
 wk.add({
@@ -37,7 +45,7 @@ wk.add({
 vim.keymap.set("n", "-", "<cmd>Oil<CR>")
 
 -- UndoTree icon
-wk.add({ "<leader>U", desc = "UndoTree", icon = { icon = "󰁯", color = "yellow" } })
+wk.add({ "<leader>U", desc = "UndoTree", icon = { icon = "󰁯", color = "orange" } })
 
 -- Refactor icon (that was missing)
 wk.add({
