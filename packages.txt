@@ -103,6 +103,8 @@ chromium
 cifs-utils
 clang
 cli11
+clipboard
+clipboard-debug
 clucene
 cmake
 cmatrix
@@ -1322,6 +1324,7 @@ xcb-util-keysyms
 xcb-util-renderutil
 xcb-util-wm
 xcb-util-xrm
+xclip
 xdg-dbus-proxy
 xdg-desktop-portal
 xdg-desktop-portal-gnome

@@ -1,0 +1,6 @@
+
+[manager]
+ratio = [1, 3, 4]
+show_hidden = true
+show_symlink = true
+cwd = { fg = "#9ccfd8" }

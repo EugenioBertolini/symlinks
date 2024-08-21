@@ -2,11 +2,6 @@
 
 # : Manager {{{
 
-[manager]
-show_hidden = true
-show_symlink = true
-cwd = { fg = "#9ccfd8" }
-
 # Hovered
 hovered = { fg = "#e0def4", bg = "#746493" }
 preview_hovered = { underline = true }
