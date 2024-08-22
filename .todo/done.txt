@@ -19,3 +19,6 @@ x 2024-08-16 make drives without sudo priviledge
 x 2024-08-16 borders i3
 x 2024-08-16 screen rec
 x 2024-08-19 Utils: Printer
+x 2024-08-22 Bug: grid and colors Matplotlib
+x 2024-08-22 LAN: mount NAS
+x 2024-08-22 LAN: SSH connection
