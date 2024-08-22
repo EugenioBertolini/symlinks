@@ -135,6 +135,9 @@ source $ZSH_PLUGINS/git/git-auto-fetch.plugin.zsh
 source $ZSH_PLUGINS/poetry/poetry.plugin.zsh
 source $ZSH_PLUGINS/poetry/poetry-env.plugin.zsh
 
+# Poetry don't ask for keyrings
+export PYTHON_KEYRING_BACKEND=keyring.backends.fail.Keyring
+
 # Atuin
 eval "$(atuin init zsh)"
 
