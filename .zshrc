@@ -122,9 +122,9 @@ alias vv='nvim .'
 alias lg='lazygit'
 alias py='python'
 alias todo='todo.sh'
-alias tl='todo list'
-alias ta='todo add'
-alias td='todo done'
+alias tdl='todo.sh list'
+alias tda='todo.sh add'
+alias tdd='todo.sh done'
 alias pipes='pipes.sh'
 
 # Git aliases
