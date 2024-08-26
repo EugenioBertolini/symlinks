@@ -21,9 +21,11 @@ cava
 chafa
 chromium
 clipboard
+clipper-git
 cmake
 cmatrix
 code
+cuda
 cups
 cups-pdf
 dkms
@@ -95,6 +97,7 @@ gvfs-nfs
 gvfs-onedrive
 gvfs-smb
 gvfs-wsdd
+gvim
 htop
 hunspell-en_us
 hunspell-it
@@ -141,6 +144,7 @@ npm
 nss-mdns
 nvidia-open-dkms
 obs-studio
+openbsd-netcat
 orca
 otf-aurulent-nerd
 otf-codenewroman-nerd
@@ -194,8 +198,10 @@ slurp
 smartmontools
 snapshot
 spotify-launcher
+sqlitebrowser
 stow
 sushi
+sysstat
 tecla
 terminus-font
 thefuck
@@ -268,7 +274,6 @@ ttf-victor-mono-nerd
 ttf-zed-mono-nerd
 ueberzugpp
 uv
-vim
 viu
 waybar
 wezterm
@@ -283,6 +288,7 @@ xdg-desktop-portal-gnome
 xdg-desktop-portal-hyprland
 xdg-user-dirs-gtk
 xdg-utils
+xorg-xhost
 xorg-xinit
 xsel
 xss-lock

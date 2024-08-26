@@ -105,6 +105,8 @@ clang
 cli11
 clipboard
 clipboard-debug
+clipper-git
+clipper-git-debug
 clucene
 cmake
 cmatrix
@@ -121,6 +123,7 @@ coreutils
 cppdap
 cracklib
 cryptsetup
+cuda
 cups
 cups-filters
 cups-pdf
@@ -197,6 +200,8 @@ gawk
 gc
 gcc
 gcc-libs
+gcc13
+gcc13-libs
 gcr
 gcr-4
 gd
@@ -333,6 +338,7 @@ gvfs-nfs
 gvfs-onedrive
 gvfs-smb
 gvfs-wsdd
+gvim
 gzip
 harfbuzz
 harfbuzz-icu
@@ -881,6 +887,8 @@ ocl-icd
 onetbb
 oniguruma
 openal
+openbsd-netcat
+opencl-nvidia
 opencore-amr
 opencv
 openexr
@@ -1063,8 +1071,11 @@ python39
 python39-debug
 pywal-git
 qca-qt6
+qcustomplot
+qhexedit2
 qpdf
 qrencode
+qscintilla-qt5
 qt5-base
 qt5-declarative
 qt5-location
@@ -1145,7 +1156,9 @@ speex
 speexdsp
 spirv-tools
 spotify-launcher
+sqlcipher
 sqlite
+sqlitebrowser
 sratom
 srt
 startup-notification
@@ -1157,6 +1170,7 @@ svt-av1
 svt-hevc
 syndication
 syntax-highlighting
+sysstat
 systemd
 systemd-libs
 systemd-sysvcompat
@@ -1276,7 +1290,6 @@ v4l-utils
 vapoursynth
 verdict
 vid.stab
-vim
 vim-runtime
 viu
 vlc
@@ -1342,6 +1355,7 @@ xorg-server
 xorg-server-common
 xorg-setxkbmap
 xorg-xauth
+xorg-xhost
 xorg-xinit
 xorg-xinput
 xorg-xkbcomp
