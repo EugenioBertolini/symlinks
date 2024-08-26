@@ -110,8 +110,8 @@ bindsym $mod+c focus mode_toggle
 # switch to workspace
 bindsym $mod+1 workspace number "1: Main"
 bindsym $mod+2 workspace number "2: Internet"
-bindsym $mod+3 workspace number "3: Slack"
-bindsym $mod+4 workspace number "4: Meida"
+bindsym $mod+3 workspace number "3: Slack-Spotify"
+bindsym $mod+4 workspace number "4: Media"
 bindsym $mod+5 workspace number "5: VLC"
 bindsym $mod+6 workspace number "6"
 bindsym $mod+7 workspace number "7"
@@ -122,7 +122,7 @@ bindsym $mod+0 workspace number "10"
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace number "1: Main"
 bindsym $mod+Shift+2 move container to workspace number "2: Internet"
-bindsym $mod+Shift+3 move container to workspace number "3: Slack"
+bindsym $mod+Shift+3 move container to workspace number "3: Slack-Spotify"
 bindsym $mod+Shift+4 move container to workspace number "4: Media"
 bindsym $mod+Shift+5 move container to workspace number "5: VLC"
 bindsym $mod+Shift+6 move container to workspace number "6"
@@ -134,10 +134,12 @@ bindsym $mod+Shift+0 move container to workspace number "10"
 # exec --no-startup-id i3-msg "workspace 3: Tmux; exec --no-startup-id alacritty -e tmux"
 exec --no-startup-id i3-msg "workspace 2: Internet; exec --no-startup-id chromium"
 exec --no-startup-id i3-msg "workspace 1: Main; exec --no-startup-id kitty"
+assign [class="kitty"] number "1: Main"
+assign [class="Alacritty"] number "1: Main"
 assign [class="Chromium"] number "2: Internet"
 assign [class="Firefox"] number "2: Internet"
-assign [class="Slack"] number "3: Slack"
-assign [class="Spotify"] number "4: Media"
+assign [class="Slack"] number "3: Slack-Spotify"
+assign [class="Spotify"] number "3: Slack-Spotify"
 assign [class="Discord"] number "4: Media"
 assign [class="Signal"] number "4: Media"
 assign [class="WhatSie"] number "4: Media"
@@ -215,11 +217,11 @@ set $highlightmed   #44415a
 set $highlighthigh  #56526e
 
 # Teming border and Windows --------------
-# target                 title     bg    text   indicator  border
-client.focused           $rose     $base $text  $rose      $rose
-client.focused_inactive  $text     $base $text  $subtle    $surface
-client.unfocused         $text     $base $text  $overlay   $overlay
-client.urgent            $text     $base $text  $love      $love
-client.placeholder       $base     $base $text  $overlay   $overlay
+# target                 title    bg       text    indicator border
+client.focused           $rose    $overlay $gold   $rose     $rose
+client.focused_inactive  $overlay $base    $subtle $overlay  $overlay
+client.unfocused         $overlay $base    $subtle $overlay  $overlay
+client.urgent            $love    $overlay $love   $love     $love
+client.placeholder       $overlay $base    $subtle $overlay  $overlay
 client.background        $base
 
