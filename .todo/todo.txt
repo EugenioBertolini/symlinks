@@ -1,5 +1,5 @@
 Lab: video fly w/ prediction overlay
-Lab: review neural network
 Chore: setup Hyperland
 Utils: Drivers LAN adapter
 Lab: XAI on LSTM
+Lab: Data Club

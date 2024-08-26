@@ -22,3 +22,4 @@ x 2024-08-19 Utils: Printer
 x 2024-08-22 Bug: grid and colors Matplotlib
 x 2024-08-22 LAN: mount NAS
 x 2024-08-22 LAN: SSH connection
+x 2024-08-26 Lab: review neural network
