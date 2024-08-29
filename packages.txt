@@ -64,6 +64,8 @@ base
 base-devel
 bash
 bat
+bc
+betterlockscreen
 binutils
 bison
 blas
@@ -361,8 +363,9 @@ hyprutils
 hyprwayland-scanner
 i3-wm
 i3blocks
-i3lock
-i3lock-fancy-git
+i3lock-color
+i3lock-color-debug
+i3lock-fancy-multimonitor
 i3status
 iana-etc
 ibus
@@ -1355,6 +1358,7 @@ xorg-server
 xorg-server-common
 xorg-setxkbmap
 xorg-xauth
+xorg-xdpyinfo
 xorg-xhost
 xorg-xinit
 xorg-xinput

@@ -11,6 +11,7 @@ baobab
 base
 base-devel
 bat
+betterlockscreen
 bluez-utils
 brightnessctl
 btop
@@ -105,7 +106,7 @@ hyprland
 hyprpaper
 i3-wm
 i3blocks
-i3lock-fancy-git
+i3lock-fancy-multimonitor
 i3status
 ibus-anthy
 inkscape
