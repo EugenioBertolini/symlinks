@@ -69,7 +69,7 @@ bindsym $mod+Shift+t exec "alacritty -e tmux"
 
 # Control redshift
 bindsym $mod+i exec redshift -P -O 4500 -g 0.8
-bindsym $mod+u exec redshift -x
+bindsym $mod+u exec redshift -P -O 6500 -g 0.8
 
 # change focus
 bindsym $mod+h focus left

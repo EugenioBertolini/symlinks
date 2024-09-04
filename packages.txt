@@ -1,6 +1,7 @@
 a52dec
 aalib
 abseil-cpp
+accounts-qml-module
 accountsservice
 acl
 adobe-source-code-pro-fonts
@@ -143,6 +144,7 @@ default-cursors
 desktop-file-utils
 device-mapper
 diffutils
+discount
 djvulibre
 dkms
 dmenu
@@ -344,6 +346,7 @@ gvim
 gzip
 harfbuzz
 harfbuzz-icu
+hdf5-openmpi
 hicolor-icon-theme
 hidapi
 highway
@@ -394,6 +397,7 @@ js115
 json-c
 json-glib
 jsoncpp
+kaccounts-integration
 karchive
 kauth
 kbd
@@ -432,6 +436,7 @@ knewstuff
 knotifications
 kpackage
 kparts
+kpty
 krb5
 kservice
 ktextwidgets
@@ -478,7 +483,10 @@ lib32-xz
 lib32-zlib
 lib32-zstd
 libabw
+libaccounts-glib
+libaccounts-qt
 libadwaita
+libaec
 libao
 libappindicator-gtk3
 libarchive
@@ -555,6 +563,7 @@ libevdev
 libevent
 libexif
 libexttextcat
+libfabric
 libfdk-aac
 libffi
 libfontenc
@@ -883,10 +892,12 @@ npth
 nspr
 nss
 nss-mdns
+numactl
 nvidia-open-dkms
 nvidia-utils
 obs-studio
 ocl-icd
+okular
 onetbb
 oniguruma
 openal
@@ -896,8 +907,11 @@ opencore-amr
 opencv
 openexr
 openjpeg2
+openmpi
+openpmix
 openssh
 openssl
+openucx
 opus
 orc
 orca
@@ -965,8 +979,10 @@ potrace
 procps-ng
 protobuf
 protobuf-c
+prrte
 psmisc
 pugixml
+purpose
 python
 python-appdirs
 python-argcomplete
@@ -1093,11 +1109,14 @@ qt6-base
 qt6-declarative
 qt6-multimedia
 qt6-multimedia-ffmpeg
+qt6-positioning
 qt6-shadertools
 qt6-speech
 qt6-svg
 qt6-translations
 qt6-wayland
+qt6-webchannel
+qt6-webengine
 ragel
 rainfall
 range-v3
@@ -1136,6 +1155,10 @@ shaderc
 shadow
 shared-mime-info
 signal-desktop
+signon-kwallet-extension
+signon-plugin-oauth2
+signon-ui
+signond
 siji-git
 simple-scan
 slack-desktop
@@ -1187,6 +1210,7 @@ terminus-font
 tevent
 texinfo
 thefuck
+threadweaver
 tk
 tldr
 tmux
@@ -1236,6 +1260,7 @@ ttf-icomoon-feather
 ttf-inconsolata-go-nerd
 ttf-inconsolata-lgc-nerd
 ttf-inconsolata-nerd
+ttf-indieflower
 ttf-intone-nerd
 ttf-iosevka-nerd
 ttf-iosevkaterm-nerd
@@ -1302,7 +1327,6 @@ vte-common
 vte4
 vulkan-headers
 vulkan-icd-loader
-vulkan-tools
 vulkan-validation-layers
 wavpack
 waybar
@@ -1353,6 +1377,7 @@ xf86-input-libinput
 xkeyboard-config
 xmlsec
 xorg-fonts-encodings
+xorg-fonts-type1
 xorg-mkfontscale
 xorg-server
 xorg-server-common
@@ -1387,7 +1412,6 @@ yyjson
 zathura
 zathura-pdf-poppler
 zbar
-zed-git
 zed-git-debug
 zenity
 zeromq

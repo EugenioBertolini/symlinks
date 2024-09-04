@@ -99,6 +99,7 @@ gvfs-onedrive
 gvfs-smb
 gvfs-wsdd
 gvim
+hdf5-openmpi
 htop
 hunspell-en_us
 hunspell-it
@@ -145,6 +146,7 @@ npm
 nss-mdns
 nvidia-open-dkms
 obs-studio
+okular
 openbsd-netcat
 orca
 otf-aurulent-nerd
@@ -242,6 +244,7 @@ ttf-icomoon-feather
 ttf-inconsolata-go-nerd
 ttf-inconsolata-lgc-nerd
 ttf-inconsolata-nerd
+ttf-indieflower
 ttf-intone-nerd
 ttf-iosevka-nerd
 ttf-iosevkaterm-nerd
@@ -289,6 +292,7 @@ xdg-desktop-portal-gnome
 xdg-desktop-portal-hyprland
 xdg-user-dirs-gtk
 xdg-utils
+xorg-fonts-type1
 xorg-xhost
 xorg-xinit
 xsel
@@ -299,7 +303,6 @@ yay-debug
 yazi
 yelp
 zathura-pdf-poppler
-zed-git
 zoxide
 zram-generator
 zsh
