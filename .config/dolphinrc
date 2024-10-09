@@ -5,8 +5,10 @@ UseSystemFont=false
 ViewFont=FiraCode Nerd Font,11,-1,5,500,0,0,0,0,0,0,0,0,0,0,1
 
 [DetailsMode]
+IconSize=32
+PreviewSize=32
 UseSystemFont=false
-ViewFont=FiraCode Nerd Font,11,-1,5,500,0,0,0,0,0,0,0,0,0,0,1
+ViewFont=JetBrains Mono,9,-1,5,700,0,0,0,0,0,0,0,0,0,0,1,Bold
 
 [General]
 RememberOpenedTabs=false
@@ -26,4 +28,4 @@ MenuBar=Disabled
 ToolBarsMovable=Disabled
 
 [PreviewSettings]
-Plugins=appimagethumbnail,audiothumbnail,comicbookthumbnail,cursorthumbnail,directorythumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,imagethumbnail,jpegthumbnail,kraorathumbnail,opendocumentthumbnail,svgthumbnail,windowsexethumbnail,windowsimagethumbnail
+Plugins=appimagethumbnail,audiothumbnail,comicbookthumbnail,cursorthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,imagethumbnail,jpegthumbnail,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,opendocumentthumbnail,svgthumbnail

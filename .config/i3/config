@@ -145,7 +145,6 @@ assign [class="Spotify"] number "3: Slack-Spotify"
 assign [class="Discord"] number "4: Media"
 assign [class="Signal"] number "4: Media"
 assign [class="WhatSie"] number "4: Media"
-assign [class="vlc"] number "5: VLC"
 
 # gaps
 gaps inner 3

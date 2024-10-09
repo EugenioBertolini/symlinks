@@ -1,0 +1,15 @@
+[Added Associations]
+application/pdf=firefox-4.desktop;firefox.desktop;
+image/jpeg=firefox.desktop;feh-6.desktop;firefox-3.desktop;feh;
+image/png=firefox-2.desktop;
+text/plain=org.gnome.TextEditor.desktop;
+video/mp4=vlc.desktop;
+
+[Default Applications]
+application/pdf=firefox-4.desktop;
+image/jpeg=firefox.desktop;
+image/png=firefox-2.desktop;
+text/plain=org.gnome.TextEditor.desktop
+video/mp4=vlc.desktop
+x-scheme-handler/webcal=chromium.desktop
+inode/directory=thunar.desktop

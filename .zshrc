@@ -13,6 +13,7 @@ export XDG_CACHE_HOME=$HOME/.cache
 export XDG_CONFIG_HOME=$HOME/.config
 export XDG_DATA_HOME=$HOME/.local/share
 export XDG_STATE_HOME=$HOME/.local/state
+export XDG_MENU_PREFIX=arch-
 
 # Add environment variables
 export EDITOR="/usr/bin/nvim"
@@ -96,8 +97,10 @@ alias xx='xmodmap ~/.Xmodmap'
 mnas() {
   sudo mount -t cifs -o user=cloudy,password=$1,iocharset=utf8,noperm //172.17.147.1/NAS100TB ~/nas
 }
+alias mg='rclone mount --daemon gdrive: /home/fuge/gdrive'
 alias sshml='ssh -XY fuge@172.17.147.237'
 alias pp='export PYTHONPATH=$(pwd)'
+alias kk='kbuildsycoca6'
 
 alias vz='nvim ~/.zshrc'
 alias vp='nvim ~/.p10k.zsh'
@@ -108,7 +111,9 @@ alias vk='nvim ~/.config/kitty/kitty.conf'
 alias vw='nvim ~/.config/wezterm/wezterm.lua'
 alias va='nvim ~/.config/alacritty/alacritty.toml'
 alias vi3='nvim ~/.config/i3/config'
-alias vpb='nvim ~/.config/polybar'
+alias vpb='nvim ~/.config/polybar/rosepine/config.ini'
+alias vh='nvim ~/.config/hypr/hyprland.conf'
+alias vwm='nvim ~/.config/waybar/config'
 
 alias neomatrix='neo-matrix --charset=english -m "L A S C I A T E   O G N I   S P E R A N Z A   V O I   C H E   E N T R A T E"'
 alias neo='neomatrix -a -b 0 -D -d 0.75 -F -G 20 -l 1,1000 -S 5'
