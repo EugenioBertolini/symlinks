@@ -1,75 +1,103 @@
 {
-    "layer": "top",
-    "position": "bottom",
-    "modules-left": ["custom/arch", "hyprland/workspaces", "custom/spotify"],
-    "modules-center": ["clock"],
-    "modules-right": ["pulseaudio", "bluetooth", "cpu", "memory", "custom/gpu", "temperature"],
+  "layer": "top",
+  "position": "bottom",
+  "modules-left": ["custom/arch", "hyprland/workspaces", "custom/spotify"],
+  "modules-center": ["clock#1", "clock#2"],
+  "modules-right": ["hyprland/language", "bluetooth", "pulseaudio#input", "pulseaudio#output", "cpu", "memory", "custom/gpu", "temperature"],
 
-    "custom/arch": {
-      "format": "  ",
-      "tooltip": false
+  "custom/arch": {
+    "format": "  ",
+    "on-click": "nwg-bar",
+    "tooltip": false
+  },
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "tooltip": false,
+    "all-outputs": true,
+    "format-icons": {
+      "active": "",
+      "default": ""
     },
-    "hyprland/workspaces": {
-      "format": "{icon}",
-      "tooltip": false,
-      "all-outputs": true,
-      "format-icons": {
-        "active": "",
-        "default": ""
-      },
-      "on-click": "activate",
-      "on-scroll-up": "hyprctl dispatch workspace e+1",
-      "on-scroll-down": "hyprctl dispatch workspace e-1"
-    },
-    "custom/spotify": {
-    	"interval": 1,
-      "return-type": "json",
-      "exec": "~/.config/waybar/scripts/spotify.sh",
-      "exec-if": "pgrep spotify",
-      "escape": true
-    },
+    "on-click": "activate",
+    "on-scroll-up": "hyprctl dispatch workspace e+1",
+    "on-scroll-down": "hyprctl dispatch workspace e-1"
+  },
+  "custom/spotify": {
+    "interval": 1,
+    "return-type": "json",
+    "exec": "~/.config/waybar/scripts/spotify.sh",
+    "exec-if": "pgrep spotify",
+    "escape": true
+  },
 
-    "clock": {
-      "format": "{:%A, %B %d    %H:%M}",
-      "tooltip": false
-    },
+  "clock#1": {
+    "format": " {:%A, %B %d}",
+    "tooltip": false
+  },
+  "clock#2": {
+    "format": " {:%H:%M}",
+    "tooltip": false
+  },
 
-    "pulseaudio": {
-      "format": "{icon} {volume}%",
-      "format-muted": " ",
-      "tooltip": false,
-      "format-icons": {
-        "headphone": " ",
-        "default": [" ", " ", "󰕾 ", "󰕾 ", "󰕾 ", " ", " ", " "]
-      },
-      "scroll-step": 1
+  "hyprland/language": {
+    "format": "󰌌 {}",
+    "format-jp": "JP"
+  },
+  "bluetooth": {
+    "format-disabled": "", // an empty format will hide the module
+    "format-off": "<span color='#403d52'></span>",
+    "format-on": "<span color='#6e6a86'></span>",
+    "format-connected": "<span color='#0082fc'></span>",
+    "tooltip-format": "{device_enumerate}",
+    "tooltip-format-enumerate-connected": "{device_alias}   {device_address}"
+  },
+  "pulseaudio#input": {
+    "format-source": " {volume}%",
+    "format-source-muted": "   ",
+    "format": "{format_source}",
+    "scroll-step": 1,
+    "smooth-scrolling-threshold": 1,
+    "on-click": "pactl set-source-mute @DEFAULT_SOURCE@ toggle",
+    "on-scroll-up": "pactl set-source-volume @DEFAULT_SOURCE@ +1%",
+    "on-scroll-down": "pactl set-source-volume @DEFAULT_SOURCE@ -1%"
+  },
+  "pulseaudio#output": {
+    "format": "{icon} {volume}%",
+    "format-muted": "   ",
+    "format-icons": {
+      "default": [" ", " ", " "]
     },
-    "bluetooth": {
-      "format": " {status}",
-      "format-disabled": "", // an empty format will hide the module
-      "format-connected": "<span color='#b4befe'></span> {num_connections}",
-      "tooltip-format": "{device_enumerate}",
-      "tooltip-format-enumerate-connected": "{device_alias}   {device_address}"
-    },
-    "cpu": {
-      "interval": 4,
-      "format": " {load:.0f}%",
-      "max-length": 10
-    },
-    "memory": {
-      "interval": 4,
-      "format": " {}%",
-      "max-length": 10
-    },
-    "custom/gpu": {
-      "exec": "nvidia-smi --query-gpu=utilization.gpu --format=csv,noheader,nounits",
-      "format": "󱁉 {}%",
-      "return-type": "",
-      "interval": 4
-    },
-    "temperature": {
-      "critical-threshold": 80,
-      "format": "{icon} {temperatureC}°C",
-      "format-icons": ["", "", ""]
-    }
+    "scroll-step": 1,
+    "smooth-scrolling-threshold": 1,
+    "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+    "on-click-right": "pavucontrol"
+  },
+  "cpu": {
+    "interval": 4,
+    "format": " {load:.0f}%",
+    "max-length": 10,
+    "on-click": "kitty btop"
+  },
+  "memory": {
+    "interval": 4,
+    "format": " {}%",
+    "max-length": 10,
+    "on-click": "kitty btop"
+  },
+  "custom/gpu": {
+    "exec": "nvidia-smi --query-gpu=utilization.gpu --format=csv,noheader,nounits",
+    "interval": 4,
+    "format": "󱁉 {}%",
+    "return-type": "",
+    "on-click": "kitty btop",
+    "tooltip": false
+  },
+  "temperature": {
+    "interval": 4,
+    "format": "{icon} {temperatureC}°C",
+    "format-icons": ["", "", ""],
+    "critical-threshold": 80,
+    "on-click": "kitty btop",
+    "tooltip": false
+  }
 }

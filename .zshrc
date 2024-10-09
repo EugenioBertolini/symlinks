@@ -113,7 +113,7 @@ alias va='nvim ~/.config/alacritty/alacritty.toml'
 alias vi3='nvim ~/.config/i3/config'
 alias vpb='nvim ~/.config/polybar/rosepine/config.ini'
 alias vh='nvim ~/.config/hypr/hyprland.conf'
-alias vwm='nvim ~/.config/waybar/config'
+alias vwb='nvim ~/.config/waybar/config'
 
 alias neomatrix='neo-matrix --charset=english -m "L A S C I A T E   O G N I   S P E R A N Z A   V O I   C H E   E N T R A T E"'
 alias neo='neomatrix -a -b 0 -D -d 0.75 -F -G 20 -l 1,1000 -S 5'

@@ -63,6 +63,14 @@ window#waybar {
   padding-right: 15px;
 }
 
+#clock.1 {
+  border-radius: 10px 0px 0px 10px;
+}
+#clock.2 {
+  border-radius: 0px 10px 10px 0px;
+}
+
+#language,
 #pulseaudio,
 #bluetooth,
 #cpu,
@@ -78,18 +86,40 @@ window#waybar {
   padding-right: 10px;
 }
 
+#bluetooth {
+  border-radius: 10px 0px 0px 10px;
+  margin-right: 0px;
+}
+#pulseaudio.input {
+  border-radius: 0px 0px 0px 0px;
+  margin-right: 0px;
+}
+#pulseaudio.input.source-muted {
+  color: #6e6a86;
+}
+#pulseaudio.output {
+  border-radius: 0px 10px 10px 0px;
+}
+#pulseaudio.output.muted {
+  color: #6e6a86;
+}
+
 #cpu {
   color: #9ccfd8;
+  border-radius: 10px 0px 0px 10px;
+  margin-right: 0px;
 }
-
 #memory {
   color: #3e8fb0;
+  border-radius: 0px;
+  margin-right: 0px;
 }
-
 #custom-gpu {
   color: #c4a7e7;
+  border-radius: 0px;
+  margin-right: 0px;
 }
-
 #temperature {
   color: #eb6f92;
+  border-radius: 0px 10px 10px 0px;
 }
