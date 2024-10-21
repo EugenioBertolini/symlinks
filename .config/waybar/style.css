@@ -70,9 +70,9 @@ window#waybar {
   border-radius: 0px 10px 10px 0px;
 }
 
-#language,
-#pulseaudio,
 #bluetooth,
+#tray,
+#pulseaudio,
 #cpu,
 #memory,
 #custom-gpu,
@@ -89,9 +89,13 @@ window#waybar {
 #bluetooth {
   border-radius: 10px 0px 0px 10px;
   margin-right: 0px;
+  padding-right: 3px;
+}
+#tray {
+  border-radius: 0px 10px 10px 0px;
 }
 #pulseaudio.input {
-  border-radius: 0px 0px 0px 0px;
+  border-radius: 10px 0px 0px 10px;
   margin-right: 0px;
 }
 #pulseaudio.input.source-muted {

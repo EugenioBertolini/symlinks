@@ -3,11 +3,11 @@
   "position": "bottom",
   "modules-left": ["custom/arch", "hyprland/workspaces", "custom/spotify"],
   "modules-center": ["clock#1", "clock#2"],
-  "modules-right": ["hyprland/language", "bluetooth", "pulseaudio#input", "pulseaudio#output", "cpu", "memory", "custom/gpu", "temperature"],
+  "modules-right": ["bluetooth", "tray", "pulseaudio#input", "pulseaudio#output", "cpu", "memory", "custom/gpu", "temperature"],
 
   "custom/arch": {
     "format": "  ",
-    "on-click": "nwg-bar",
+    "on-click": "exec /home/fuge/.config/hypr/powermenu.sh",
     "tooltip": false
   },
   "hyprland/workspaces": {
@@ -39,10 +39,6 @@
     "tooltip": false
   },
 
-  "hyprland/language": {
-    "format": "󰌌 {}",
-    "format-jp": "JP"
-  },
   "bluetooth": {
     "format-disabled": "", // an empty format will hide the module
     "format-off": "<span color='#403d52'></span>",
@@ -50,6 +46,9 @@
     "format-connected": "<span color='#0082fc'></span>",
     "tooltip-format": "{device_enumerate}",
     "tooltip-format-enumerate-connected": "{device_alias}   {device_address}"
+  },
+  "tray": {
+    "spacing": 10
   },
   "pulseaudio#input": {
     "format-source": " {volume}%",
@@ -72,6 +71,7 @@
     "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
     "on-click-right": "pavucontrol"
   },
+
   "cpu": {
     "interval": 4,
     "format": " {load:.0f}%",
