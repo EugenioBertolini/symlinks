@@ -1,4 +1,3 @@
-import = ["~/.config/alacritty/rose-pine-moon.toml"]
 
 [window]
 opacity = 0.95
@@ -28,3 +27,6 @@ osc52 = "CopyPaste"
 
 [selection]
 save_to_clipboard = true
+
+[general]
+import = ["~/.config/alacritty/rose-pine-moon.toml"]
