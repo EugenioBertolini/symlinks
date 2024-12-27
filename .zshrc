@@ -29,20 +29,6 @@ export ZSH_PLUGINS="$ZSH/plugins"
 # TMUX
 export TMUX_PLUGINS="$HOME/.tmux/plugins"
 
-# # . "/bin" . "/sbin" . "/usr/bin" . "/usr/sbin"
-# if ! [[ "$PATH" =~ ":/bin" ]]; then
-#   PATH="$PATH:/bin"
-# fi
-# if ! [[ "$PATH" =~ ":/sbin" ]]; then
-#   PATH="$PATH:/sbin"
-# fi
-# if ! [[ "$PATH" =~ ":/usr/bin" ]]; then
-#   PATH="$PATH:/usr/bin"
-# fi
-# if ! [[ "$PATH" =~ ":/usr/sbin" ]]; then
-#   PATH="$PATH:/usr/sbin"
-# fi
-#
 # Add ~/.local/bin and "t" of tmux-session-wizard to PATH
 if ! [[ "$PATH" =~ ":$HOME/.local/bin" ]]; then
   PATH="$PATH:$HOME/.local/bin"
@@ -98,6 +84,7 @@ mnas() {
   sudo mount -t cifs -o user=cloudy,password=$1,iocharset=utf8,noperm //172.17.147.1/NAS100TB ~/nas
 }
 alias mg='rclone mount --daemon gdrive: /home/fuge/gdrive'
+alias musb='sudo mount /dev/sda1 /home/fuge/usb'
 alias sshml='ssh -XY fuge@172.17.147.237'
 alias pp='export PYTHONPATH=$(pwd)'
 alias kk='kbuildsycoca6'
@@ -138,8 +125,9 @@ source $ZSH_PLUGINS/git/git.plugin.zsh
 source $ZSH_PLUGINS/git/git-auto-fetch.plugin.zsh
 
 # Poetry aliases and automatic virtual env
-source $ZSH_PLUGINS/poetry/poetry.plugin.zsh
-source $ZSH_PLUGINS/poetry/poetry-env.plugin.zsh
+# source $ZSH_PLUGINS/poetry/poetry.plugin.zsh
+# source $ZSH_PLUGINS/poetry/poetry-env.plugin.zsh
+source $ZSH_PLUGINS/uv/uv-env.plugin.zsh
 
 # Poetry don't ask for keyrings
 export PYTHON_KEYRING_BACKEND=keyring.backends.fail.Keyring
