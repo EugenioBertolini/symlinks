@@ -12,4 +12,4 @@ image/png=firefox-2.desktop;
 inode/directory=thunar.desktop
 text/plain=org.gnome.TextEditor.desktop
 video/mp4=vlc.desktop
-x-scheme-handler/webcal=chromium.desktop
+x-scheme-handler/webcal=brave-browser.desktop
