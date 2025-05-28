@@ -83,6 +83,9 @@ alias xx='xmodmap ~/.Xmodmap'
 mnas() {
   sudo mount -t cifs -o user=cloudy,password=$1,iocharset=utf8,noperm //172.17.147.1/NAS100TB ~/nas
 }
+mnas2() {
+  sudo mount -t cifs -o user=cloudy,password=$1,iocharset=utf8,noperm //172.17.147.1/NAS100TB-Vol2 ~/nas2
+}
 alias mg='rclone mount --daemon gdrive: /home/fuge/gdrive'
 alias musb='sudo mount /dev/sda1 /home/fuge/usb'
 alias sshml='ssh -XY fuge@172.17.147.220'
