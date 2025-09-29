@@ -135,6 +135,9 @@ source $ZSH_PLUGINS/uv/uv-env.plugin.zsh
 # Poetry don't ask for keyrings
 export PYTHON_KEYRING_BACKEND=keyring.backends.fail.Keyring
 
+# Weights and Biases
+export WANDB_DIR="/home/fuge/nas/euge"
+
 # Atuin
 eval "$(atuin init zsh)"
 
