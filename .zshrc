@@ -136,7 +136,7 @@ source $ZSH_PLUGINS/uv/uv-env.plugin.zsh
 export PYTHON_KEYRING_BACKEND=keyring.backends.fail.Keyring
 
 # Weights and Biases
-export WANDB_DIR="/home/fuge/nas/euge"
+export WANDB_DIR="/home/fuge/storage"
 
 # Display opencv videos
 export QT_QPA_PLATFORM=xcb
