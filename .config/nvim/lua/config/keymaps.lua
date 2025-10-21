@@ -35,13 +35,3 @@ vim.keymap.set("n", "-", "<cmd>Oil<CR>")
 
 -- UndoTree icon
 wk.add({ "<leader>U", desc = "UndoTree", icon = { icon = "󰁯", color = "orange" } })
-
--- Refactor icon (that was missing)
-wk.add({
-  mode = { "n", "v" },
-  {
-    "<leader>r",
-    group = "refactor",
-    icon = { icon = "󰌇", color = "orange" },
-  },
-})

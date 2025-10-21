@@ -138,6 +138,9 @@ export PYTHON_KEYRING_BACKEND=keyring.backends.fail.Keyring
 # Weights and Biases
 export WANDB_DIR="/home/fuge/nas/euge"
 
+# Display opencv videos
+export QT_QPA_PLATFORM=xcb
+
 # Atuin
 eval "$(atuin init zsh)"
 
