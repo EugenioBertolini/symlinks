@@ -21,10 +21,13 @@ ViewFont=FiraCode Nerd Font,11,-1,5,500,0,0,0,0,0,0,0,0,0,0,1
 
 [KFileDialog Settings]
 Places Icons Auto-resize=false
-Places Icons Static Size=22
+Places Icons Static Size=16
 
 [MainWindow]
 MenuBar=Disabled
+
+[PlacesPanel]
+IconSize=16
 
 [PreviewSettings]
 Plugins=appimagethumbnail,audiothumbnail,comicbookthumbnail,cursorthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,imagethumbnail,jpegthumbnail,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,opendocumentthumbnail,svgthumbnail
