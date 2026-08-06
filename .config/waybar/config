@@ -1,7 +1,7 @@
 {
   "layer": "top",
   "position": "bottom",
-  "modules-left": ["custom/arch", "hyprland/workspaces", "custom/spotify"],
+  "modules-left": ["custom/arch", "custom/magicwindow", "hyprland/workspaces", "custom/spotify"],
   "modules-center": ["clock#1", "clock#2"],
   "modules-right": ["bluetooth", "tray", "pulseaudio#input", "pulseaudio#output", "cpu", "memory", "custom/gpu", "temperature"],
 
@@ -9,6 +9,12 @@
     "format": "  ",
     "on-click": "exec /home/fuge/.config/hypr/powermenu.sh",
     "tooltip": false
+  },
+  "custom/magicwindow": {
+    "format": "✨",
+    "tooltip": false,
+    "all-outputs": true,
+    "on-click": "hyprctl dispatch togglespecialworkspace magic"
   },
   "hyprland/workspaces": {
     "format": "{icon}",

@@ -11,13 +11,28 @@ window#waybar {
 }
 
 #custom-arch {
-  font-size: 18px;
+  font-size: 22px;
   background-color: #191724;
   color: #1793d1;
   border-radius: 10px;
   margin-left: 15px;
   margin-bottom: 5px;
-  padding-right: 6px;
+  padding-right: 0px;
+}
+
+#custom-magicwindow {
+  background-color: #191724;
+  color: #c4a7e7; /* A nice magic iris/purple to stand out */
+  border-radius: 10px;
+  margin-left: 15px;
+  margin-bottom: 5px;
+  padding-left: 9px;
+  padding-right: 9px;
+}
+
+#custom-magicwindow:hover {
+  transition: none;
+  color: #ea9a97; /* Matches your workspace hover color */
 }
 
 #workspaces {
@@ -51,7 +66,7 @@ window#waybar {
   margin-left: 15px;
   margin-bottom: 5px;
   padding-left: 15px;
-  padding-right: 20px;
+  padding-right: 15px;
 }
 
 #clock {
