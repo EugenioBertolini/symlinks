@@ -29,9 +29,12 @@ export ZSH_PLUGINS="$ZSH/plugins"
 # TMUX
 export TMUX_PLUGINS="$HOME/.tmux/plugins"
 
-# Add ~/.local/bin and "t" of tmux-session-wizard to PATH
+# Add ~/.local/bin, ~/.npm-global/bin, and "t" of tmux-session-wizard to PATH
 if ! [[ "$PATH" =~ ":$HOME/.local/bin" ]]; then
   PATH="$PATH:$HOME/.local/bin"
+fi
+if ! [[ "$PATH" =~ ":$HOME/.npm-global/bin" ]]; then
+  PATH="$HOME/.npm-global/bin:$PATH"
 fi
 if ! [[ "$PATH" =~ ":$TMUX_PLUGINS/tmux-session-wizard/bin" ]]; then
   PATH="$PATH:$TMUX_PLUGINS/tmux-session-wizard/bin"
@@ -140,6 +143,9 @@ export WANDB_DIR="/home/fuge/storage"
 
 # Display opencv videos
 export QT_QPA_PLATFORM=xcb
+
+# Claude
+export CLAUDE_CODE_NEW_INIT=1
 
 # Atuin
 eval "$(atuin init zsh)"
