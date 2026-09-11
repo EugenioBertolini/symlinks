@@ -1,12 +1,33 @@
 return {
   "stevearc/oil.nvim",
-  opts = {},
-  dependencies = { "nvim-mini/mini.icons" },
+  dependencies = {
+    "nvim-mini/mini.icons",
+    {
+      "malewicz1337/oil-git.nvim",
+      opts = {
+        show_file_highlights = true,
+        show_directory_highlights = true, -- Highlights parent folders if contained files are modified
+        show_file_symbols = true,
+        show_directory_symbols = true, -- Shows git status icons next to directory names
+      },
+    },
+  },
   config = function()
     require("oil").setup({
       default_file_explorer = true,
       delete_to_trash = true,
       skip_confirm_for_simple_edits = true,
+      git = {
+        add = function(path)
+          return true
+        end,
+        mv = function(src_path, dest_path)
+          return true
+        end,
+        rm = function(path)
+          return true
+        end,
+      },
       view_options = {
         show_hidden = true,
         natural_order = true,
@@ -34,5 +55,7 @@ return {
         ["<C-t>"] = false,
       },
     })
+
+    require("oil-git").setup()
   end,
 }
