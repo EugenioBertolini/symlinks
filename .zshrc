@@ -92,6 +92,9 @@ mnas2() {
 alias mg='rclone mount --daemon gdrive: /home/fuge/gdrive'
 alias musb='sudo mount /dev/sda1 /home/fuge/usb'
 alias sshml='ssh -XY fuge@172.17.147.220'
+alias codessh='code --remote ssh-remote+fuge@172.17.147.220 /home/fuge/code/flyvideo'
+alias curssh='cursor --remote ssh-remote+fuge@172.17.147.220 /home/fuge/code/flyvideo'
+
 alias pp='export PYTHONPATH=$(pwd)'
 alias kk='kbuildsycoca6'
 

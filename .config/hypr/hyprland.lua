@@ -160,6 +160,8 @@ hl.bind(mainMod .. " + SHIFT + CONTROL + right", hl.dsp.workspace.move({ monitor
 -- Special Workspace (Scratchpad)
 hl.bind(mainMod .. " + B", hl.dsp.workspace.toggle_special("magic"))
 hl.bind(mainMod .. " + SHIFT + B", hl.dsp.window.move({ workspace = "special:magic" }))
+hl.bind(mainMod .. " + N", hl.dsp.workspace.toggle_special("magic2"))
+hl.bind(mainMod .. " + SHIFT + N", hl.dsp.window.move({ workspace = "special:magic2" }))
 
 -- Mouse Binds
 hl.bind(mainMod .. " + mouse_down", hl.dsp.focus({ workspace = "e+1" }))
@@ -188,6 +190,13 @@ hl.bind("XF86AudioMute", hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SINK@ to
 hl.bind("XF86AudioPrev", hl.dsp.exec_cmd("playerctl previous"))
 hl.bind("XF86AudioPlay", hl.dsp.exec_cmd("playerctl play-pause"))
 hl.bind("XF86AudioNext", hl.dsp.exec_cmd("playerctl next"))
+
+--------------------------------------------------------------------------------
+-- HYPRWHSPR-RS DICTATION
+--------------------------------------------------------------------------------
+-- Push-to-Talk (Hold ALT + ` to record, release to transcribe)
+hl.bind(mainMod .. " + f", hl.dsp.exec_cmd("hyprwhspr-rs record start"))
+hl.bind(mainMod .. " + f", hl.dsp.exec_cmd("hyprwhspr-rs record stop"), { release = true })
 
 --------------------------------------------------------------------------------
 -- AUTOSTART

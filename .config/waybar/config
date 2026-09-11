@@ -1,41 +1,4 @@
 {
-  "layer": "top",
-  "position": "bottom",
-  "modules-left": ["custom/arch", "custom/magicwindow", "hyprland/workspaces", "custom/spotify"],
-  "modules-center": ["clock#1", "clock#2"],
-  "modules-right": ["bluetooth", "tray", "pulseaudio#input", "pulseaudio#output", "cpu", "memory", "custom/gpu", "temperature"],
-
-  "custom/arch": {
-    "format": "  ",
-    "on-click": "exec /home/fuge/.config/hypr/powermenu.sh",
-    "tooltip": false
-  },
-  "custom/magicwindow": {
-    "format": "✨",
-    "tooltip": false,
-    "all-outputs": true,
-    "on-click": "hyprctl dispatch togglespecialworkspace magic"
-  },
-  "hyprland/workspaces": {
-    "format": "{icon}",
-    "tooltip": false,
-    "all-outputs": true,
-    "format-icons": {
-      "active": "",
-      "default": ""
-    },
-    "on-click": "activate",
-    "on-scroll-up": "hyprctl dispatch workspace e+1",
-    "on-scroll-down": "hyprctl dispatch workspace e-1"
-  },
-  "custom/spotify": {
-    "interval": 1,
-    "return-type": "json",
-    "exec": "~/.config/waybar/scripts/spotify.sh",
-    "exec-if": "pgrep spotify",
-    "escape": true
-  },
-
   "clock#1": {
     "format": " {:%A, %B %d}",
     "tooltip": false
@@ -44,66 +7,131 @@
     "format": " {:%H:%M}",
     "tooltip": false
   },
-
-  "bluetooth": {
-    "format-disabled": "", // an empty format will hide the module
-    "format-off": "<span color='#403d52'></span>",
-    "format-on": "<span color='#6e6a86'></span>",
-    "format-connected": "<span color='#0082fc'></span>",
-    "tooltip-format": "{device_enumerate}",
-    "tooltip-format-enumerate-connected": "{device_alias}   {device_address}"
-  },
-  "tray": {
-    "spacing": 10
-  },
-  "pulseaudio#input": {
-    "format-source": " {volume}%",
-    "format-source-muted": "   ",
-    "format": "{format_source}",
-    "scroll-step": 1,
-    "smooth-scrolling-threshold": 1,
-    "on-click": "pactl set-source-mute @DEFAULT_SOURCE@ toggle",
-    "on-scroll-up": "pactl set-source-volume @DEFAULT_SOURCE@ +1%",
-    "on-scroll-down": "pactl set-source-volume @DEFAULT_SOURCE@ -1%"
-  },
-  "pulseaudio#output": {
-    "format": "{icon} {volume}%",
-    "format-muted": "   ",
-    "format-icons": {
-      "default": [" ", " ", " "]
-    },
-    "scroll-step": 1,
-    "smooth-scrolling-threshold": 1,
-    "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
-    "on-click-right": "pavucontrol"
-  },
-
   "cpu": {
-    "interval": 4,
     "format": " {load:.0f}%",
+    "interval": 4,
     "max-length": 10,
     "on-click": "kitty btop"
   },
-  "memory": {
-    "interval": 4,
-    "format": " {}%",
-    "max-length": 10,
-    "on-click": "kitty btop"
+  "custom/arch": {
+    "format": "  ",
+    "on-click": "exec /home/fuge/.config/hypr/powermenu.sh",
+    "tooltip": false
   },
   "custom/gpu": {
     "exec": "nvidia-smi --query-gpu=utilization.gpu --format=csv,noheader,nounits",
-    "interval": 4,
     "format": "󱁉 {}%",
+    "interval": 4,
+    "on-click": "kitty btop",
     "return-type": "",
+    "tooltip": false
+  },
+  "custom/hyprwhspr": {
+    "exec": "cat ${XDG_CACHE_HOME:-$HOME/.cache}/hyprwhspr-rs/status.json 2>/dev/null || echo '{\"text\":\"󰍭\",\"class\":\"inactive\",\"tooltip\":\"Not running\"}'",
+    "format": "{text}",
+    "interval": 1,
+    "on-click": "walker --provider menus:hyprwhspr",
+    "return-type": "json",
+    "tooltip": true
+  },
+  "custom/magicwindow": {
+    "all-outputs": true,
+    "exec": "~/.config/waybar/scripts/magic-status.sh magic  ",
+    "interval": 1,
+    "return-type": "json",
+    "on-click": "hyprctl dispatch 'hl.dsp.workspace.toggle_special(\"magic\")'",
+    "tooltip": false
+  },
+  "custom/magicwindow2": {
+    "all-outputs": true,
+    "exec": "~/.config/waybar/scripts/magic-status.sh magic2  ",
+    "interval": 1,
+    "return-type": "json",
+    "on-click": "hyprctl dispatch 'hl.dsp.workspace.toggle_special(\"magic2\")'",
+    "tooltip": false
+  },
+  "custom/spotify": {
+    "escape": true,
+    "exec": "~/.config/waybar/scripts/spotify.sh",
+    "exec-if": "pgrep spotify",
+    "interval": 1,
+    "return-type": "json"
+  },
+  "hyprland/workspaces": {
+    "all-outputs": true,
+    "format": "{name}",
+    "on-click": "~/.config/waybar/scripts/debug-click.sh '{id}' '{name}' '{icon}'",
+    "on-scroll-down": "hyprctl dispatch 'hl.dsp.focus({ workspace = \"e-1\" })'",
+    "on-scroll-up": "hyprctl dispatch 'hl.dsp.focus({ workspace = \"e+1\" })'",
+    "tooltip": false
+  },
+  "layer": "top",
+  "memory": {
+    "format": " {}%",
+    "interval": 4,
+    "max-length": 10,
+    "on-click": "kitty btop"
+  },
+  "modules-center": [
+    "clock#1",
+    "clock#2",
+    "custom/hyprwhspr"
+  ],
+  "modules-left": [
+    "custom/arch",
+    "custom/magicwindow",
+    "custom/magicwindow2",
+    "hyprland/workspaces",
+    "custom/spotify"
+  ],
+  "modules-right": [
+    "tray",
+    "pulseaudio#input",
+    "pulseaudio#output",
+    "cpu",
+    "memory",
+    "custom/gpu",
+    "temperature"
+  ],
+  "position": "bottom",
+  "pulseaudio#input": {
+    "format": "{format_source}",
+    "format-source": " {volume}%",
+    "format-source-muted": "   ",
+    "on-click": "pactl set-source-mute @DEFAULT_SOURCE@ toggle",
+    "on-scroll-down": "pactl set-source-volume @DEFAULT_SOURCE@ -1%",
+    "on-scroll-up": "pactl set-source-volume @DEFAULT_SOURCE@ +1%",
+    "scroll-step": 1,
+    "smooth-scrolling-threshold": 1
+  },
+  "pulseaudio#output": {
+    "format": "{icon} {volume}%",
+    "format-icons": {
+      "default": [
+        " ",
+        " ",
+        " "
+      ]
+    },
+    "format-muted": "   ",
+    "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+    "on-click-right": "pavucontrol",
+    "scroll-step": 1,
+    "smooth-scrolling-threshold": 1
+  },
+  "temperature": {
+    "critical-threshold": 80,
+    "format": "{icon} {temperatureC}°C",
+    "format-icons": [
+      "",
+      "",
+      ""
+    ],
+    "interval": 4,
     "on-click": "kitty btop",
     "tooltip": false
   },
-  "temperature": {
-    "interval": 4,
-    "format": "{icon} {temperatureC}°C",
-    "format-icons": ["", "", ""],
-    "critical-threshold": 80,
-    "on-click": "kitty btop",
-    "tooltip": false
+  "tray": {
+    "spacing": 10
   }
 }
