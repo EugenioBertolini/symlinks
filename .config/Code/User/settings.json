@@ -1,0 +1,46 @@
+{
+    "workbench.colorTheme": "Rosé Pine Moon",
+    "workbench.colorCustomizations": {
+        "[Rosé Pine]": {
+            "editorGroup.border": "#ebbcba",
+            "sideBySideEditor.border": "#ebbcba",
+            "editorRuler.foreground": "#403d52"
+        },
+        "[Rosé Pine Moon]": {
+            "editorGroup.border": "#ea9a97",
+            "sideBySideEditor.border": "#ea9a97",
+            "editorRuler.foreground": "#44415a"
+        },
+        "[Rosé Pine Dawn]": {
+            "editorGroup.border": "#b4637a",
+            "sideBySideEditor.border": "#b4637a",
+            "editorRuler.foreground": "#9893a5"
+        }
+    },
+    "editor.rulers": [
+        88
+    ],
+    "editor.fontFamily": "'JetBrainsMono Nerd Font'",
+    "editor.fontWeight": "600",
+    "terminal.integrated.commandsToSkipShell": [
+        "language-julia.interrupt"
+    ],
+    "julia.symbolCacheDownload": true,
+    "julia.enableTelemetry": true,
+    "git.confirmSync": false,
+    "git.autofetch": true,
+    "jupyter.askForKernelRestart": false,
+    "editor.formatOnSave": true,
+    "git.enableSmartCommit": true,
+    "python.analysis.typeCheckingMode": "standard",
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnSave": true
+    },
+    "black-formatter.args": [
+        "--line-length=88"
+    ],
+    "remote.SSH.useExecServer": false,
+    "vim.useSystemClipboard": true,
+    "claudeCode.preferredLocation": "panel"
+}
