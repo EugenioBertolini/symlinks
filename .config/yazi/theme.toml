@@ -22,7 +22,7 @@ tab_width = 1
 
 # Border
 border_symbol = "│"
-border_style = { fg = "#524f67" }
+# border_style = { fg = "#524f67" }
 
 # Highlighting
 syntect_theme = "~/.config/yazi/rose-pine-moon.tmTheme"
