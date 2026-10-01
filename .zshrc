@@ -40,6 +40,14 @@ if ! [[ "$PATH" =~ ":$TMUX_PLUGINS/tmux-session-wizard/bin" ]]; then
   PATH="$PATH:$TMUX_PLUGINS/tmux-session-wizard/bin"
 fi
 
+# Add Android SDK to PATH
+if ! [[ "$PATH" =~ ":$ANDROID_HOME/cmdline-tools/latest/bin" ]]; then
+  PATH="$PATH:$ANDROID_HOME/cmdline-tools/latest/bin"
+fi
+if ! [[ "$PATH" =~ ":$ANDROID_HOME/platform-tools" ]]; then
+  PATH="$PATH:$ANDROID_HOME/platform-tools"
+fi
+
 # Export PATH
 export PATH
 
@@ -149,6 +157,9 @@ export QT_QPA_PLATFORM=xcb
 
 # Claude
 export CLAUDE_CODE_NEW_INIT=1
+
+# Android SDK
+export ANDROID_HOME="$HOME/Android/Sdk"
 
 # Atuin
 eval "$(atuin init zsh)"
