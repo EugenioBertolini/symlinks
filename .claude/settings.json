@@ -48,5 +48,9 @@
       "**Trusted repo**: /home/fuge/code/photo-framer (no remotes configured)",
       "**Org-specific CLIs**: None configured"
     ]
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "~/.claude/tmux-statusline.sh"
   }
 }
