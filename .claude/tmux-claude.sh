@@ -20,12 +20,12 @@ color() { # color <pct>
   awk -v p="$1" -v m="$med" -v h="$high" -v l="$low_c" -v M="$med_c" -v H="$high_c" \
     'BEGIN { print (p >= h ? H : p >= m ? M : l) }'
 }
-seg() { # seg <icon-colour> <icon> <label> <pct|"">
-  local pct=$4
+seg() { # seg <icon-colour> <icon> <pct|"">
+  local pct=$3
   if [ -z "$pct" ]; then
-    printf '#[fg=%s]%s %s #[fg=brightblack]--' "$1" "$2" "$3"
+    printf '#[fg=%s]%s #[fg=brightblack]--' "$1" "$2"
   else
-    printf '#[fg=%s]%s %s %s%.0f%%' "$1" "$2" "$3" "$(color "$pct")" "$pct"
+    printf '#[fg=%s]%s %s%.0f%%' "$1" "$2" "$(color "$pct")" "$pct"
   fi
 }
 
@@ -54,6 +54,6 @@ ic_5h=$'\U000f051f'   # nf-md-timer_sand
 ic_7d=$'\U000f00ed'   # nf-md-calendar
 
 printf '%s %s%s %s%s ' \
-  "$(seg green "$ic_ctx" ctx "$ctx")" "$sep" \
-  "$(seg yellow "$ic_5h" 5h "$h5")" "$sep" \
-  "$(seg cyan "$ic_7d" 7d "$d7")"
+  "$(seg green "$ic_ctx" "$ctx")" "$sep" \
+  "$(seg yellow "$ic_5h" "$h5")" "$sep" \
+  "$(seg cyan "$ic_7d" "$d7")"

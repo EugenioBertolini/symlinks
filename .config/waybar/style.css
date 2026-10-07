@@ -131,6 +131,9 @@ window#waybar {
 
 #tray,
 #pulseaudio,
+#custom-claude-ctx,
+#custom-claude-5h,
+#custom-claude-7d,
 #cpu,
 #memory,
 #custom-gpu,
@@ -168,9 +171,40 @@ window#waybar {
   color: #6e6a86;
 }
 
+#custom-claude-ctx {
+  color: #31748f;
+  border-radius: 10px 0px 0px 10px;
+  margin-right: 0px;
+}
+#custom-claude-5h {
+  color: #f6c177;
+  border-radius: 0px;
+  margin-right: 0px;
+}
+#custom-claude-7d {
+  color: #ebbcba;
+  border-radius: 0px;
+  margin-right: 0px;
+}
+#custom-claude-ctx.none,
+#custom-claude-5h.none,
+#custom-claude-7d.none {
+  color: #6e6a86;
+}
+#custom-claude-ctx.medium,
+#custom-claude-5h.medium,
+#custom-claude-7d.medium {
+  color: #f6c177;
+}
+#custom-claude-ctx.high,
+#custom-claude-5h.high,
+#custom-claude-7d.high {
+  color: #eb6f92;
+}
+
 #cpu {
   color: #9ccfd8;
-  border-radius: 10px 0px 0px 10px;
+  border-radius: 0px;
   margin-right: 0px;
 }
 #memory {

@@ -18,6 +18,24 @@
     "on-click": "exec /home/fuge/.config/hypr/powermenu.sh",
     "tooltip": false
   },
+  "custom/claude-ctx": {
+    "exec": "~/.config/waybar/scripts/claude-status.sh ctx",
+    "interval": 5,
+    "return-type": "json",
+    "tooltip": false
+  },
+  "custom/claude-5h": {
+    "exec": "~/.config/waybar/scripts/claude-status.sh 5h",
+    "interval": 5,
+    "return-type": "json",
+    "tooltip": false
+  },
+  "custom/claude-7d": {
+    "exec": "~/.config/waybar/scripts/claude-status.sh 7d",
+    "interval": 5,
+    "return-type": "json",
+    "tooltip": false
+  },
   "custom/gpu": {
     "exec": "nvidia-smi --query-gpu=utilization.gpu --format=csv,noheader,nounits",
     "format": "󱁉 {}%",
@@ -55,6 +73,7 @@
     "exec": "~/.config/waybar/scripts/spotify.sh",
     "exec-if": "pgrep spotify",
     "interval": 1,
+    "on-click": "playerctl --player=spotify play-pause",
     "return-type": "json"
   },
   "hyprland/workspaces": {
@@ -88,6 +107,9 @@
     "tray",
     "pulseaudio#input",
     "pulseaudio#output",
+    "custom/claude-ctx",
+    "custom/claude-5h",
+    "custom/claude-7d",
     "cpu",
     "memory",
     "custom/gpu",
