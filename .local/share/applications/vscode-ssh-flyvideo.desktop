@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=VSCode (flyvideo SSH)
+Comment=Open flyvideo over SSH remote in VSCode
+Exec=code --remote ssh-remote+fuge@172.17.147.201 /home/fuge/code/flyvideo
+Icon=vscode
+Terminal=false
+Type=Application
+Categories=Development;
