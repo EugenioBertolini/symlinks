@@ -3,6 +3,10 @@
     "defaultMode": "auto"
   },
   "model": "sonnet",
+  "statusLine": {
+    "type": "command",
+    "command": "~/.claude/tmux-statusline.sh"
+  },
   "effortLevel": "xhigh",
   "modelSettings": {
     "claude-opus-5": {
@@ -15,7 +19,7 @@
       "effortLevel": "xhigh"
     },
     "claude-sonnet-5-5": {
-      "effortLevel": "high"
+      "effortLevel": "xhigh"
     }
   },
   "tui": "fullscreen",
@@ -48,9 +52,5 @@
       "**Trusted repo**: /home/fuge/code/photo-framer (no remotes configured)",
       "**Org-specific CLIs**: None configured"
     ]
-  },
-  "statusLine": {
-    "type": "command",
-    "command": "~/.claude/tmux-statusline.sh"
   }
 }
