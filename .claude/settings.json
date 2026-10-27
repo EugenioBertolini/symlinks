@@ -9,12 +9,6 @@
   },
   "effortLevel": "xhigh",
   "modelSettings": {
-    "claude-opus-5": {
-      "effortLevel": "xhigh"
-    },
-    "claude-sonnet-5": {
-      "effortLevel": "medium"
-    },
     "claude-opus-5-5": {
       "effortLevel": "xhigh"
     },
@@ -52,5 +46,7 @@
       "**Trusted repo**: /home/fuge/code/photo-framer (no remotes configured)",
       "**Org-specific CLIs**: None configured"
     ]
-  }
+  },
+  "idleCompaction": false,
+  "switchModelsOnFlag": true
 }
