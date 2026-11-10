@@ -1,6 +1,8 @@
 {
   "permissions": {
-    "defaultMode": "auto"
+    "defaultMode": "auto",
+    "allow": ["mcp__claude-artifacts"],
+    "deny": []
   },
   "model": "sonnet",
   "statusLine": {
